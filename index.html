@@ -464,6 +464,73 @@
   from { width: 0; }
 }
 
+
+#projectInfo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  color: #0ff;
+  border: 2px solid #0ff;
+  padding: 30px 40px;
+  z-index: 9999;
+  font-family: 'Saira', monospace;
+  text-align: center;
+  box-shadow: 0 0 20px #0ff;
+  animation: glitch-fade 0.5s ease;
+}
+
+#projectInfo a {
+  color: #0ff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#projectInfo button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0ff;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff;
+}
+
+
+.popup-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  border: 2px solid #0ff;
+  padding: 30px;
+  color: #0ff;
+  font-family: 'Saira', monospace;
+  box-shadow: 0 0 15px #0ff, inset 0 0 10px #0ff;
+  z-index: 9999;
+  animation: glitch-fade 0.5s ease-out forwards;
+}
+
+.popup-info.closing {
+  animation: arcadeClose 0.5s ease-out forwards;
+}
+
+@keyframes arcadeClose {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0.1);
+    filter: brightness(0);
+  }
+}
+
     </style>
   </head>
   <body>

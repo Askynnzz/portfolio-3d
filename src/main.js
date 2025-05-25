@@ -243,6 +243,7 @@ function togglePopup(state) {
           switch (selectedIndex) {
             case 0: // Projets
               loadProjects();
+              showProjectInfo();
               togglePopup(false);
               break;
             case 1: // CV
@@ -499,3 +500,43 @@ AFRAME.registerComponent("skills-launch", {
     sprite.setAttribute('src', frames[i % totalFrames]);
     i++;
   }, 100); // 10 FPS, change si tu veux une vitesse différente
+
+
+
+
+function showProjectInfo() {
+  // Supprime l'existant s'il y en a un
+  const existing = document.getElementById("projectInfo");
+  if (existing) existing.remove();
+
+  const info = document.createElement("div");
+  info.id = "projectInfo";
+  info.className = "popup-info"; // on applique une classe de base
+  info.innerHTML = `
+    <h2>📁 Mes projets</h2>
+    <p>Mes projets sont en cours de connexion avec une API.<br>
+    En attendant, vous pouvez consulter mon GitHub 👇</p>
+    <a href="https://github.com/Askynnzz" target="_blank">🔗 github.com/Askynnzz</a><br><br>
+    <button id="closeProjectBtn">Fermer</button>
+  `;
+
+  document.body.appendChild(info);
+
+  // Lier le bouton après ajout
+  document.getElementById("closeProjectBtn").addEventListener("click", window.closeProjectInfo);
+}
+
+window.closeProjectInfo = function () {
+  const info = document.getElementById("projectInfo");
+  if (!info) return;
+
+  const closeSound = document.getElementById("closeSound");
+  closeSound.currentTime = 0;
+  closeSound.play();
+
+  info.classList.add("closing");
+
+  setTimeout(() => {
+    info.remove();
+  }, 500);
+};
