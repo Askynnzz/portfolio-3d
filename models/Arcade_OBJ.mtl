@@ -1,0 +1,64 @@
+# Blender MTL File: '_CG_Arcade_Machine.blend'
+# Material Count: 5
+
+newmtl Caja
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Texturas/Caja_Normal.png
+map_Kd Texturas/Caja_BaseColor.png
+map_Ns Texturas/Caja_Roughness.png
+refl Texturas/Caja_Metallic.png
+
+newmtl Cristal
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Joystick
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Texturas/Joystick_Normal.png
+map_Kd Texturas/Joystick_BaseColor.png
+map_Ns Texturas/Joystick_Roughness.png
+refl Texturas/Joystick_Metallic.png
+
+newmtl Monedero
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Texturas/Monedero_Normal.png
+map_Kd Texturas/Monedero_BaseColor.png
+map_Ns Texturas/Monedero_Roughness.png
+refl Texturas/Monedero_Metallic.png
+
+newmtl Street_Fighter_II
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2

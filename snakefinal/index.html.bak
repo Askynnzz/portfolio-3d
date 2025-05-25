@@ -1,0 +1,45 @@
+<!DOCTYPE html>"
+
+
+<header>JEU SNAKE CONTROLER PAR ARDUINO
+ <link rel="stylesheet" type="text/css" href="style.css">
+ 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/snake.js"></script>
+</header>
+
+
+
+<section class="snakeTable"></section>
+
+
+<section class="modul">
+  <div class="Jouer">
+    <span>Jouer</span>
+  </div>
+  
+
+
+</section>
+
+
+<footer>
+  <p>Réaliser par : Yassine B , Yassine W , Sajit</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
