@@ -534,20 +534,30 @@
   }
 }
 
+    #techCredits {
+  font-style: italic;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff;
+  animation: flicker 1.2s infinite alternate;
+}
+
     </style>
     <script type="module" crossorigin src="/portfolio-3d/assets/index-B47B9b8e.js"></script>
     <link rel="stylesheet" crossorigin href="/portfolio-3d/assets/index-CrYBktwj.css">
   </head>
   <body>
     <div id="crt-effect"></div>
-    <div id="loadingScreen">
-    <div class="loading-content">
-      <p id="loadingText">Chargement...</p>
-      <div></div>
-      <p id="loadingText">Portfolio3D - Projet réalisé avec Laravel,JS(A-Frame,ThreeJS),HTML/CSS</p>
-      <p id="startPrompt" style="display: none;">👉 Cliquez pour jouer</p>
-    </div>
-    </div>
+<div id="loadingScreen">
+  <div class="loading-content">
+    <p id="loadingText">Chargement...</p>
+    <p id="startPrompt" style="display: none;">👉 Cliquez pour jouer</p>
+    <!-- 👉 ajoute cette ligne en dessous -->
+    <p id="techCredits" style="font-size: 16px; margin-top: 20px; opacity: 0.6;">
+      Portfolio3D - Projet réalisé avec Laravel, JS (A-Frame, ThreeJS), HTML/CSS
+    </p>
+  </div>
+</div>
+
 
     <div id="popupMenu">
       <div class="close-btn" onclick="togglePopup(false)">×</div>
